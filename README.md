@@ -1,6 +1,8 @@
-# JPath2022
+# ModernPath2022
 
-This code relates to the paper "Deep Learning-Based Histotype Diagnosis of Ovarian Carcinoma Whole-Slide Pathology Images" (the link, citation, and a figure from the paper will be added when it is published)
+![alt text](https://github.com/AIMLab-UBC/ModernPath2022/blob/main/docs/Figure_1.tif)
+
+This code relates to the paper "Deep Learning-Based Histotype Diagnosis of Ovarian Carcinoma Whole-Slide Pathology Images" (the link and citation will be added when it is published)
 
 This repository covers two main features implemented in the paper: 1. the color normalization strategy used and 2. the implementations of the deep convolutional neural networks that were compared
 
@@ -29,4 +31,4 @@ We compared the performance of four deep learning architectures. Here are links 
 1. One-stage Transfer Learning (1STL)
 2. DeepMIL
 3. VarMIL 
-4. Two-Stage Transfer Learning (2STL) https://github.com/AIMLab-UBC/MIDL2020
+4. [Two-Stage Transfer Learning (2STL)](https://github.com/AIMLab-UBC/MIDL2020)
