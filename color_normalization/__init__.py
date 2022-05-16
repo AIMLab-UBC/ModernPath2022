@@ -15,7 +15,7 @@ class ColorNormalization(object):
 
     Attributes
     ----------
-    method : str
+    methods : str
         Normalization method(s)
 
     patch_location : str
@@ -24,7 +24,7 @@ class ColorNormalization(object):
     norm_location : str
         Path to root directory storing all of the normalized patches
 
-    reference_image : str
+    reference_images : str
         Path(s) to reference image(s) for normalization.
 
     no_luminosity_standardization : bool
@@ -43,7 +43,7 @@ class ColorNormalization(object):
         self.methods = config.methods
         self.patch_location = config.patch_location
         self.norm_location = config.norm_location
-        self.reference_images = config.reference_image
+        self.reference_images = config.reference_images
         self.use_standardizer = config.use_standardizer
         self.use_multiple_CPUs = config.use_multiple_CPUs
         self.n_process = psutil.cpu_count() if self.use_multiple_CPUs else 1

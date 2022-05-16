@@ -14,7 +14,7 @@ def create_parser():
     parser.add_argument('--norm_location', type=dir_path, required=True,
         help="""The full path to the head folder where the normalized patches will be saved. The directory stucture will be the same as for patch_location (i.e., will use the patch_pattern directory structure.)""")
 
-    parser.add_argument('--reference_image',  nargs="+", type=file_path, required=True,
+    parser.add_argument('--reference_images',  nargs="+", type=file_path, required=True,
         help="""The path to reference image(s) for normalization.
         Multiple reference images can be used - just separate them with a space.""")
 

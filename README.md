@@ -22,7 +22,27 @@ The color normalization strategy used in this paper was first introduced in "[Th
   publisher={Wiley Online Library}
 }
 ```
+### Installation
 
+- Clone this repo
+```
+mkdir color_normalization
+cd color_normalization
+git clone https://github.com/AIMLab-UBC/ModernPath2022
+cd ModernPath2022
+```
+
+- Install required packages
+The suggested strategy is to create a conda environment with Python 3.8, install the staintools package using pip, and install all the other packages using conda.
+
+```
+conda create -n cn_env python=3.8
+conda activate cn_env
+conda install -c conda-forge python-spams=2.6.1
+pip install staintools==2.1.2
+conda install psutil=5.8.0
+conda install tqdm=4.64.0
+```
 
 # Models
 
