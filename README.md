@@ -29,6 +29,6 @@ The color normalization strategy used in this paper was first introduced in "[Th
 We compared the performance of four deep learning architectures. Here are links to the implementations of each model.
 
 1. One-stage Transfer Learning (1STL)
-2. DeepMIL
-3. VarMIL 
+2. [DeepMIL](https://github.com/AIMLab-UBC/EC2022) (This repository is private, and will be made public following the publication of a different paper)
+3. [VarMIL](https://github.com/AIMLab-UBC/EC2022) (This repository is private, and will be made public following the publication of a different paper)
 4. [Two-Stage Transfer Learning (2STL)](https://github.com/AIMLab-UBC/MIDL2020)
