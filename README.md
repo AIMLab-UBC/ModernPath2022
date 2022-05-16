@@ -24,16 +24,9 @@ The color normalization strategy used in this paper was first introduced in "[Th
 ```
 ### Installation
 
-- Clone this repo
-```
-mkdir color_normalization
-cd color_normalization
-git clone https://github.com/AIMLab-UBC/ModernPath2022
-cd ModernPath2022
-```
+1. Install required packages
 
-- Install required packages
-The suggested strategy is to create a conda environment with Python 3.8, install the staintools package using pip, and install all the other packages using conda.
+The suggested strategy is to create a conda environment with Python 3.8, install the [staintools](https://staintools.readthedocs.io/en/latest/) package using pip, and install all the other packages using conda.
 
 ```
 conda create -n cn_env python=3.8
@@ -42,6 +35,20 @@ conda install -c conda-forge python-spams=2.6.1
 pip install staintools==2.1.2
 conda install psutil=5.8.0
 conda install tqdm=4.64.0
+```
+
+2. Clone this repo
+```
+mkdir color_normalization
+cd color_normalization
+git clone https://github.com/AIMLab-UBC/ModernPath2022
+cd ModernPath2022
+```
+
+### Running color normalization
+Here is an example command that creates normalized copies of image patches, where each patch is randomly normalized using 1 of 2 color normalization methods (reinhard and vahadane) and 1 of 3 reference images (ref1.png, ref2.png, ref3.png).
+```
+python3 app_color_norm.py --methods reinhard vahadane --patch_location <path/to/ModernPath2022>/sample_images/orig_patches --norm_location <path/to/ModernPath2022>/sample_images/norm_patches --reference_images <path/to/ModernPath2022>/sample_images/ref1.png <path/to/ModernPath2022>/sample_images/ref2.png <path/to/ModernPath2022>/sample_images/ref3.png --patch_pattern ''
 ```
 
 # Models
