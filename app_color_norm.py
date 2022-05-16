@@ -1,5 +1,5 @@
 from color_normalization.parser import create_parser
-from color_normalization.utilities import set_random_seed
+from utils.utilities import set_random_seed
 from color_normalization import ColorNormalization
 
 if __name__ == "__main__":

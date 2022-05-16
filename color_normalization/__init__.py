@@ -8,7 +8,7 @@ import random
 from tqdm import tqdm
 from PIL import Image
 import multiprocessing as mp
-import color_normalization.utilities as utils
+import utils.utilities as utils
 
 class ColorNormalization(object):
     """Normalize patches"

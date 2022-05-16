@@ -1,5 +1,5 @@
 import argparse
-from color_normalization.utilities import dir_path, file_path
+from utils.utilities import dir_path, file_path
 
 def create_parser():
     parser = argparse.ArgumentParser(description=''' Perform color normalization ''')
